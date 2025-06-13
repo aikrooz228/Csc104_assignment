@@ -4,10 +4,13 @@ class Account:
 
 
     def withdraw(self,amount):
-        if amount > self.balance:
-            raise ValueError("Insufficient funds")
-        self.balance -= amount
-
+        if amount < self.balance:
+            self.balance -= amount
+            print("New balance is:", self.balance)
+        else:
+            print("Insufficient Funds")
 
     def deposit(self,amount):
-        self.balance +=amount
+        if amount>0:
+                self.balance += amount
+                print("New balance is:", self.balance)
