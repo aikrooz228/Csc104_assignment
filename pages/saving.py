@@ -7,7 +7,7 @@ from saving_account import SavingAccount
 
 import streamlit as st
 
-st.set_page_config(page_title="BANK APP", layout="centered")
+st.set_page_config(page_title="Savings Account", layout="centered")
 st.title("Saving Account")
 maximim_withdrawal = 500000
 

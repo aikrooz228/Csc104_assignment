@@ -7,12 +7,12 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from current_account import CurrentAccount
 
-st.set_page_config(page_title="BANK APP", layout="centered")
+st.set_page_config(page_title="Current Account", layout="centered")
 st.title("Current Account")
 
 
 if "current" not in st.session_state:
-    st.session_state.current = CurrentAccount(1000)
+    st.session_state.current = CurrentAccount(10000)
 
 
 

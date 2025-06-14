@@ -1,8 +1,8 @@
 from account import Account
 
 class SavingAccount(Account):
-    def __init__(self, balance, limit=500000):  # Must accept 2 arguments!
-        super().__init__(balance)
+    def __init__(self, balance, limit=500000):
+        Account().__init__(balance)
         self.limit = limit
 
 
